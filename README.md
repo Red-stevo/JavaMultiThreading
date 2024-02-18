@@ -3,12 +3,12 @@
 
 <ol>
 <li>Extending the Thread classs</li>
-  ` java 
+  ```java 
   class example extends Thread{
     run(){
     //You code goes here
     }
-  }`
+  }```
 <li>Implimenting the Runnable interface</li>
 </ol>
 </p>
