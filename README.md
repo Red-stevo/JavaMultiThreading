@@ -2,7 +2,13 @@
 <p>This repository contains basic introduction to java multi threading concepts:-<br /> 
 
 <ol>
-<li>Extending the thread classs</li>
-<li>Implementing the Runnable interface</li>
+<li>Extending the Thread classs</li>
+  `java 
+  class example extends Thread{
+    run(){
+    //You code goes here
+    }
+  }`
+<li>Implimenting the Runnable interface</li>
 </ol>
 </p>
