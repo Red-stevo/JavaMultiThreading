@@ -1,24 +1,19 @@
 public class QuickSort {
 
-    int[] arr;
-
-    public int[] quickSort(int start, int end)
+    public int[] quickSort(int[] arr, int start, int end)
     {
-        int point;
+        int point = partition(arr,start,end);
         /*This method will perform the sorting by recursion*/
-
-        //call the method to perform each partition(placement).
-//        point = partition(start, end);
-
-
-
-        return  null;
+        if(start < end)
+        {
+            quickSort(arr,start,point-1);
+            quickSort(arr,point+1,end);
+        }
+        return  arr;
     }
 
 
-
-
-    public int partition(int start, int end) {
+    public int partition(int[] arr, int start, int end) {
 
         int pivot = start;
 

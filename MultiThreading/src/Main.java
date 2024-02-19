@@ -5,6 +5,12 @@ public class Main {
 
         QuickSort q = new QuickSort();
 
-        int point = q.partition(0,(arr.length-1));
+       int point = q.partition(arr,0,(arr.length-1));
+
+       ThreadGenerator threadGenerator = new ThreadGenerator(arr, 0, point-1);
+       threadGenerator.start();
+
+       ThreadGenerator threadGenerator1 = new ThreadGenerator(arr,point+1,arr.length-1);
+       threadGenerator1.start();
     }
 }
