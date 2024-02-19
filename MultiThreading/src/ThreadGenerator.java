@@ -1,9 +1,21 @@
 public class ThreadGenerator extends Thread{
 
-    int[] arr;
-    int start;
+    private int[] arr;
+    private int start;
 
-    int end;
+    private int end;
+
+    public int[] getArr() {
+        return arr;
+    }
+
+    public int getStart() {
+        return start;
+    }
+
+    public int getEnd() {
+        return end;
+    }
 
     public ThreadGenerator(int[] arr, int start, int end){
         this.arr = arr;
